@@ -1,0 +1,15 @@
+/* Blocks */
+.side-by-side {
+	.side {
+		vertical-align: middle;
+	}
+	.inner {
+		padding: 0 100px;
+	}
+	.side.cover-image {
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50%;
+	    min-height: 450px;
+	}
+}
