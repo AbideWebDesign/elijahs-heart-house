@@ -55,7 +55,7 @@ if ( ! function_exists( 'ehh_setup' ) ) {
 	}
 }
 
-add_image_size('Side Cover', 1067, 1600, true);
+add_image_size('Side', 1170, 846, true);
 
 add_filter( 'excerpt_more', 'ehh_custom_excerpt_more' );
 
