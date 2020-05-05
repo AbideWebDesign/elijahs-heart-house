@@ -2,10 +2,15 @@
 @import "theme"; 
 
 body {
-	.components-editor-notices__dismissible,.components-editor-notices__dismissible .components-notice, .components-editor-notices__pinned .components-notice {
+	.components-editor-notices__dismissible,.components-editor-notices__dismissible .components-notice, .components-editor-notices__pinned .components-notice, input[id^="block-editor-inserter__search-"]:placeholder-shown+.block-editor-inserter__results .components-panel__body:first-of-type, .block-editor-inserter__menu-help-panel{
 		display: none !important;
 	}
-	
+	.block-editor-inserter__menu.has-help-panel {
+		width: 400px;
+	}
+	.components-panel__body-toggle.components-button:focus:not(:disabled):not([aria-disabled=true]) {
+		outline: none;
+	}
 	.editor-styles-wrapper {
 		background-color: #ccc;
 	}

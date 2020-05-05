@@ -14,7 +14,7 @@ function ehh_acf_init() {
 			'title'				=> __('Banner'),
 			'description'		=> __(''),
 			'render_callback'	=> 'ehh_acf_block_render_callback',
-			'category'			=> 'formatting',
+			'category'			=> 'layout',
 			'icon'				=> 'align-left',
 		));
 		
@@ -24,7 +24,7 @@ function ehh_acf_init() {
 			'title'				=> __('Text'),
 			'description'		=> __(''),
 			'render_callback'	=> 'ehh_acf_block_render_callback',
-			'category'			=> 'formatting',
+			'category'			=> 'layout',
 			'icon'				=> 'align-center',
 		));
 		
@@ -34,7 +34,7 @@ function ehh_acf_init() {
 			'title'				=> __('Call to Action'),
 			'description'		=> __(''),
 			'render_callback'	=> 'ehh_acf_block_render_callback',
-			'category'			=> 'formatting',
+			'category'			=> 'layout',
 			'icon'				=> 'megaphone',
 		));
 		
@@ -44,7 +44,7 @@ function ehh_acf_init() {
 			'title'				=> __('Card'),
 			'description'		=> __(''),
 			'render_callback'	=> 'ehh_acf_block_render_callback',
-			'category'			=> 'formatting',
+			'category'			=> 'layout',
 			'icon'				=> 'media-document',
 		));
 	}
@@ -61,4 +61,17 @@ function ehh_acf_block_render_callback( $block ) {
 		include( get_theme_file_path("/template-parts/blocks/content-{$slug}.php") );
 	
 	}
+}
+
+add_filter( 'allowed_block_types', 'ehh_allowed_block_types' );
+ 
+function ehh_allowed_block_types( $allowed_blocks ) {
+
+	return array(
+		'acf/banner',
+		'acf/text',
+		'acf/cta',
+		'acf/card',
+	);
+ 
 }
