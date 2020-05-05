@@ -24,7 +24,7 @@ $logo = get_field('logo', 'options');
 	
 	<div class="site" id="page">
 
-		<div id="page-header" class="py-3 py-md-5">
+		<div id="page-header" class="py-3">
 			
 			<div class="container">
 				

@@ -1,4 +1,4 @@
-<div id="banner-block" class="bg-secondary text-white py-5 py-xl-3">
+<div id="banner-block" class="<?php echo ( get_field('type') == 'full' ? '' : 'banner-sm' ); ?> bg-secondary text-white py-5 py-xl-3">
 	
 	<div class="container">
 		
