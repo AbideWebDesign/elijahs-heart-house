@@ -25,7 +25,7 @@
 									
 					<?php if ( get_field('main_title') ): ?>
 					
-						<h1 class="mb-3"><?php the_field('main_title'); ?></h1>
+						<h1 class="mb-3 sm"><?php the_field('main_title'); ?></h1>
 					
 					<?php endif; ?>
 					
