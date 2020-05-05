@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="row justify-content-between">
 
-			<div class="col-lg-5">
+			<div class="col-lg-5 mb-4 mb-mb-0">
 
 				<h2><?php the_field('col_1_title', 'options'); ?></h2>
 				
@@ -50,7 +50,7 @@ defined( 'ABSPATH' ) || exit;
 		
 		<div class="row justify-content-between">
 			
-			<div class="col-lg-6">
+			<div class="col-lg-6 mb-4 mb-mb-0">
 				
 				<p class="mb-1"><?php the_field('top_text', 'options'); ?></p>
 				
